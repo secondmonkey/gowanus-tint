@@ -20,6 +20,73 @@ var geocoder = L.mapbox.geocoder('secondmonkey.map-y0dqwz49');
 var map = L.mapbox.map('map', 'secondmonkey.map-y0dqwz49')
     .setView([40.6735,-73.9975], 16);
 
+// Define circle options
+// http://leafletjs.com/reference.html#circle
+var circle_options = {
+    color: '#fff',      // Stroke color
+    opacity: 1,         // Stroke opacity
+    weight: 10,         // Stroke weight
+    fillColor: '#000',  // Fill color
+    fillOpacity: 0.6    // Fill opacity
+};
+
+var circle_one = L.circle([38.89415, -77.03738], 20, circle_options).addTo(map);
+var circle_two = L.circle([38.89415, -77.03578], 20, circle_options).addTo(map);    
+
+var line_points = [
+            [
+              40.67209440184532,-73.99842381477356
+            ],
+            [
+              40.67173635944081,-73.99824142456055
+            ],
+            [
+              40.671817732883355,-73.9980912208557
+            ],
+            [
+              40.67209440184532,-73.99787664413452
+            ],
+            [
+              40.67215950025777,-73.9978551864624
+            ],
+            [
+              40.67271283419748,-73.99744749069212
+            ],
+            [
+              40.67251754039015,-73.99686813354492
+            ],
+            [
+              40.672647736325274,-73.99676084518433
+            ],
+            [
+              40.672899990226085,-73.997243642807
+            ],
+            [
+              40.673925270452116,-73.9964497089386
+            ],
+            [
+              40.674014778295025,-73.99649262428284
+            ],
+            [
+              40.67407987483254,-73.99668574333191
+            ],
+            [
+              40.67209440184532,-73.99842381477356
+            ]
+        ];
+
+// Define polyline options
+// http://leafletjs.com/reference.html#polyline
+var polyline_options = {
+    color: '#8f9e79',
+    fillOpacity: 1.0
+};
+
+// Defining a polygon here instead of a polyline will connect the
+// endpoints and fill the path.
+// http://leafletjs.com/reference.html#polygon
+var polygon = L.polygon(line_points, polyline_options).addTo(map);
+
 // disable drag and zoom handlers
 map.dragging.disable();
 map.touchZoom.disable();
