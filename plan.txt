@@ -1,0 +1,17 @@
+* Refactor image_average to take stdin (i.e., make scriptable)
+
+* Figure out how to store the images and metadata
+ * flat file with timestamp, filename, HEX value?
+ * or JSON?
+
+* Figure out how to render the images and hex values onto test page
+
+* Finish drawing map 
+
+* Incorporate actual images onto map
+
+----
+
+* Automate running of image processing
+
+* Refactor image_average for conciseness

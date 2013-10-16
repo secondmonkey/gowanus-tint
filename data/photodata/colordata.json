@@ -1,0 +1,9 @@
+//var photos = {"photos": [
+    //{"photoID":1, "datetime":"20131005", "color":"#8f9e79"},
+    //{"photoID":2, "datetime":"20131006", "color":"red"},
+    //{"photoID":3, "datetime":"20131007", "color":"blue"},
+    //{"photoID":4, "datetime":"20131008", "color":"green"}
+    //]
+//}
+
+var photos = ["red","green","blue"];

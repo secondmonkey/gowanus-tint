@@ -1,16 +1,15 @@
-# process image to extract color
-# given a file name, return a HEX value
-
-# make a dict of: 
-# timestamp, filename, HEX value
-
 import Image
 import numpy
 import webcolors
+import sys
+
+stdin = sys.stdin.read()
+
+print stdin
 
 desired_size = 500
 
-im = Image.open('./assets/images/test-2.jpg')
+im = Image.open('./images/test-2.jpg')
 smaller_img = im.resize((desired_size,desired_size))
 size = smaller_img.size[0]
 
