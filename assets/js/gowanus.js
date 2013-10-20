@@ -1,25 +1,44 @@
-var colorLayer;
+var style = {
+    fillColor: 'white',
+    fillOpacity: 1.0,
+    weight:0
+}
 
-function clickChange(e) {
+function setColor(id) {
+    style.fillColor = photos[id]["hexvalue"];
     colorLayer.setStyle(style);
-}
-
-function getColor() {
-    var d = Math.floor((Math.random()*100));
-    return d > 1000 ? '#800026' :
-           d > 500  ? '#BD0026' :
-           d > 200  ? '#E31A1C' :
-           d > 100  ? '#FC4E2A' :
-           d > 50   ? '#FD8D3C' :
-           d > 20   ? '#FEB24C' :
-           d > 10   ? '#FED976' :
-                      '#FFEDA0';
-}
-
-function style() {
-    return {
-        fillColor: getColor(),
-        fillOpacity: 1.0,
-        weight: 0
-        };
     }
+
+function getArray(){
+    return $.getJSON("data/photodata/colordata.js");
+}
+
+var photos;
+
+getArray().done(function(json) {
+    photos = json;
+});
+
+$( document ).ready(function() {
+
+    $.getJSON("data/photodata/colordata.js", function( data ) {
+
+    var items = [];
+
+    var onclick = 'onclick="setColor(this.id);return false;">'
+    
+    console.log(onclick);
+
+    $.each( data, function( key, val ) {
+        items.push( "<li><a id='" + key + "' href='#'" + onclick + val["datetime"] + "</a></li>" );
+    });
+
+    for (var i = 0; i < items.length; i++) {
+        console.log(items[i]);
+        $("ul").append(items[i]);
+        }
+
+    });
+
+});
+
