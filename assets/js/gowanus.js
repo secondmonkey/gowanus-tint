@@ -6,6 +6,7 @@ var style = {
 
 function setColor(id) {
     style.fillColor = photos[id]["hexvalue"];
+    document.body.style.background = style.fillColor;
     colorLayer.setStyle(style);
     }
 

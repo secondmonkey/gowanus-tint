@@ -5,7 +5,6 @@
 [ ] Add Google analytics
 [ ] Choose hosting solution
 [ ] Publish
-[ ] Change background color of page also
 
 [ ] Refactor image_average to separate CSV construction from image processing
 [ ] Automate running of image processing
@@ -16,3 +15,4 @@
 [x] Figure out how to store the images and metadata
 [x] Make datetimes human readable
 [x] Sort by datetime
+[x] Change background color of page also
