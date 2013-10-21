@@ -9,36 +9,39 @@ function setColor(id) {
     colorLayer.setStyle(style);
     }
 
-function getArray(){
-    return $.getJSON("data/photodata/colordata.js");
-}
-
 var photos;
-
-getArray().done(function(json) {
-    photos = json;
-});
+var dates = [];
+var links = [];
+var datelinks = {};
+var sortable_datelinks = [];
 
 $( document ).ready(function() {
 
-    $.getJSON("data/photodata/colordata.js", function( data ) {
+    function getArray(){
+        return $.getJSON("data/photodata/colordata.js");
+    }
 
-    var items = [];
+    getArray().done(function(json) {
+        photos = json;
 
-    var onclick = 'onclick="setColor(this.id);return false;">'
-    
-    console.log(onclick);
+        var onclick = 'onclick="setColor(this.id);return false;">'
 
-    $.each( data, function( key, val ) {
-        items.push( "<li><a id='" + key + "' href='#'" + onclick + val["datetime"] + "</a></li>" );
-    });
+        $.each( json, function( key, val ) {
+            val = val["datetime"].replace(/:/, "/").replace(/:/, "/");
+            datelinks[key] = val;
+            sortable_datelinks.push([key, datelinks[key]])
+        });
 
-    for (var i = 0; i < items.length; i++) {
-        console.log(items[i]);
-        $("ul").append(items[i]);
+        dates_sorted = sortable_datelinks.sort(function(a,b) {return Date.parse(a[1]) - Date.parse(b[1])});
+
+        for (var i = 0; i < sortable_datelinks.length; i++) {
+            links.push( "<li><a id='" + sortable_datelinks[i][0] + "' href='#'" + onclick + Date.parse(sortable_datelinks[i][1]).toString('M/d/yyyy hh:mm tt') + "</a></li>" );
+}
+
+        for (var i = 0; i < links.length; i++) {
+            $(".photolist").append(links[i]);
         }
 
     });
 
 });
-

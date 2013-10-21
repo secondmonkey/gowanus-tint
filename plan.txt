@@ -1,17 +1,18 @@
-* Refactor image_average to take stdin (i.e., make scriptable)
+[ ] Print out image thumbnails
+[ ] Add "selected" state to image instance divs
+[ ] Cycle through image instances on timer
+[ ] Add explanatory splash page
+[ ] Add Google analytics
+[ ] Choose hosting solution
+[ ] Publish
+[ ] Change background color of page also
 
-* Figure out how to store the images and metadata
- * flat file with timestamp, filename, HEX value?
- * or JSON?
+[ ] Refactor image_average to separate CSV construction from image processing
+[ ] Automate running of image processing
+[ ] Render images and hex values onto test page (no map)
 
-* Figure out how to render the images and hex values onto test page
-
-* Finish drawing map 
-
-* Incorporate actual images onto map
-
-----
-
-* Automate running of image processing
-
-* Refactor image_average for conciseness
+[x] Refactor image_average to take stdin (i.e., make scriptable)
+[x] Finish drawing map 
+[x] Figure out how to store the images and metadata
+[x] Make datetimes human readable
+[x] Sort by datetime
