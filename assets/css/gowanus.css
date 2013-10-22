@@ -1,36 +1,41 @@
 body { 
-margin:0; 
-padding:0; 
+    margin:0; 
+    padding:0
+}
+
+a, p {
+    font-family: 'Roboto Slab';
+    font-size: 120%
 }
 
 #map { 
-position:absolute;
-top:0;
-bottom:0;
-width:80%;
-float:left;
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:80%;
+    float:left
 }
 
-.date {
-font-size: 40px;
+.dates { 
+    float:right;
+    width:20%;
+    background: white
 }
 
-#sidebar {
-float:right;
-width:20%
+.dates ul {
+    list-style: none
 }
 
-#dates { 
-background: white;
+li {
+    margin-top:10px;
 }
 
-#photos img {
-height:100px;
-width:100px;
-margin-left: auto;
-margin-right: auto;
+.dates ul a {
+    display: block
 }
 
-.hidden.thumb {
-display: none;
+a:visited {color: black}
+
+.active {
+    margin-left: 20px;
 }

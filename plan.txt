@@ -1,4 +1,3 @@
-[ ] Add "selected" state to image instance divs
 [ ] Cycle through image instances on timer
 [ ] Add explanatory splash page
 [ ] Add Google analytics
@@ -15,3 +14,5 @@
 [x] Make datetimes human readable
 [x] Sort by datetime
 [x] Change background color of page also
+[x] Add "selected" state to image instance divs
+[x] Add a webfont

@@ -4,10 +4,11 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
         <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+        <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
+        <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
         <script src='./data/geodata/polygons.js'></script>
         <script src='./assets/js/gowanus.js'></script>
         <script src='./assets/js/date.js'></script>
-        <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
         <link href='./assets/css/gowanus.css' rel='stylesheet' />
         <!--[if lte IE 8]>
         <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' >
@@ -16,13 +17,10 @@
 
     <body>
         <div id='map'></div>
-        <div id='sidebar'>
-            <div id='dates'>
-                <ul class="photolist">
-                </ul>
-            </div>
-            <div id='photos'>
-            </div>
+
+        <div class='dates'>
+            <ul class='photolist'>
+            </ul>
         </div>
 
         <script type='text/javascript'>
