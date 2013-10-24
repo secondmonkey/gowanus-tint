@@ -9,8 +9,8 @@ import os
 
 NEWSIZE = 500
 
-CSV_PATH = '/Users/sjforman/Dropbox/Projects/gowanus/data/photodata/colordata.csv'
-IMAGE_DIR = '/Users/sjforman/Dropbox/Projects/gowanus/data/photodata/images'
+CSV_PATH = '../data/photodata/colordata.csv'
+IMAGE_DIR = '../data/photodata/images'
 
 
 

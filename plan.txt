@@ -1,12 +1,12 @@
-[ ] Cycle through image instances on timer
 [ ] Add explanatory splash page
-[ ] Add Google analytics
-[ ] Choose hosting solution
-[ ] Publish
+[ ] Source Twitter bootstrap
+[ ] Select first color record on pageload
 
+[ ] Cycle through image instances on timer
 [ ] Refactor image_average to separate CSV construction from image processing
 [ ] Automate running of image processing
 [ ] Render images and hex values onto test page (no map)
+[ ] Accept viewer-provided images
 
 [x] Refactor image_average to take stdin (i.e., make scriptable)
 [x] Finish drawing map 
@@ -16,3 +16,6 @@
 [x] Change background color of page also
 [x] Add "selected" state to image instance divs
 [x] Add a webfont
+[x] Add Google analytics
+[x] Choose hosting solution
+[x] Publish

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+        <link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+        <link href='./assets/css/gowanus.css' rel='stylesheet' />
+        <link href='./assets/css/bootstrap-responsive.css' rel='stylesheet' />
+        <title>Hue Gowanus</title>
+        <!--[if lte IE 8]>
+        <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' >
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="container main">
+            <div class="intro">
+                <p>The Gowanus is a canal of many colors.</p>
+                <p><a href='./map.html'>Hue Gowanus</a> tracks its moods.</p>
+            </div>
+
+            <div class="splashphoto">
+                <a href="./map.html">
+                    <img id='splash-img' src='./assets/img/gowanus-sun.jpg' alt='Gowanus in sunshine' />
+                </a>
+            </div>
+
+            <div class="ref">
+                <p>I'm a <a href="http://froggbrooklyn.org/">Frogg</a>, so I 
+                walk over the canal almost every day. Some days it's antifreeze-green. 
+                Other days it's fog-gray. This little project was inspired by that observation.</p>
+                <p>I'm using <a href="http://www.pythonware.com/products/pil/">PIL</a> to
+                determine the average colors of <a href="./photos.html">photos</a> of the canal taken 
+                straight-down from the <a href="http://bit.ly/1eNPjqD">Carroll Street Bridge</a>
+                and rendering them onto a <a href="https://www.mapbox.com/">Mapbox</a> map.
+                </p>
+                <a href="https://github.com/secondmonkey/hue-gowanus">Github</a>
+            </div>
+
+        </div>
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-45054338-1', 'secondmonkey.com');
+            ga('send', 'pageview');
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+        <script src='./assets/js/bootstrap.js'></script>
+    </body>
+
+</html>
