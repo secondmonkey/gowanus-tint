@@ -55,17 +55,28 @@ $(document).ready(function() {
             $("#imglinks").append(imglinks[i]);
         }
 
-        $('a.datelink').click(function(){
-            $('a.datelink').removeClass("active");
-            $(this).addClass("active");
-        });
+        var $datelinks = $("a.datelink");
 
-        function selectFirstLink() {
-            $("a.datelink").first().addClass("active");
-            setColor($("a.datelink")[0].id)
+        function activateLink(linkIndex) {
+            $datelinks.removeClass("active");
+            $datelinks.eq(linkIndex).addClass("active");
+            setColor($datelinks[linkIndex].id);
         }
 
-        selectFirstLink();
+        $('a.datelink').click(function(){
+            activateLink($(this).parent().index());
+            window.clearTimeout(4);
+        });
+
+        function rotate() {
+            var index = 0;
+            timeoutID = window.setInterval(function() {
+                activateLink(index);
+                index = (index + 1) % $datelinks.length; 
+            }, 2000);
+        }
+
+        rotate();
 
     });
 
