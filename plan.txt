@@ -1,8 +1,6 @@
-[ ] Add explanatory splash page
-[ ] Source Twitter bootstrap
 [ ] Select first color record on pageload
-
 [ ] Cycle through image instances on timer
+
 [ ] Refactor image_average to separate CSV construction from image processing
 [ ] Automate running of image processing
 [ ] Render images and hex values onto test page (no map)
@@ -19,3 +17,4 @@
 [x] Add Google analytics
 [x] Choose hosting solution
 [x] Publish
+[x] Add explanatory splash page

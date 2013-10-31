@@ -60,6 +60,13 @@ $(document).ready(function() {
             $(this).addClass("active");
         });
 
+        function selectFirstLink() {
+            $("a.datelink").first().addClass("active");
+            setColor($("a.datelink")[0].id)
+        }
+
+        selectFirstLink();
+
     });
 
 });
