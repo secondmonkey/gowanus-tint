@@ -1,10 +1,12 @@
-[ ] Select first color record on pageload
-[ ] Cycle through image instances on timer
-
+[ ] Choose better font
+[ ] Make layout responsive
+[ ] Animate color transitions
+[ ] Show images inline
 [ ] Refactor image_average to separate CSV construction from image processing
 [ ] Automate running of image processing
-[ ] Render images and hex values onto test page (no map)
-[ ] Accept viewer-provided images
+[ ] Automate image ingestion
+[ ] Accept submitted images
+[ ] Automate deployment
 
 [x] Refactor image_average to take stdin (i.e., make scriptable)
 [x] Finish drawing map 
@@ -18,3 +20,5 @@
 [x] Choose hosting solution
 [x] Publish
 [x] Add explanatory splash page
+[x] Select first color record on pageload
+[x] Cycle through image instances on timer
