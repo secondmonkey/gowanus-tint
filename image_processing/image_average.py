@@ -12,8 +12,6 @@ NEWSIZE = 500
 CSV_PATH = '../data/photodata/colordata.csv'
 IMAGE_DIR = '../data/photodata/images'
 
-
-
 # Make an array of all the filenames that have already been processed #
 
 hexdict = csv.DictReader(open(CSV_PATH, 'rb'))

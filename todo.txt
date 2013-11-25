@@ -1,10 +1,10 @@
-[ ] Choose better font
-[ ] Make layout responsive
-[ ] Animate color transitions
 [ ] Show images inline
+[ ] Pull images from Flickr
+[ ] Tweet new images
+[ ] Choose better font
+[ ] Make layout responsive http://redvinestudio.com/how-to-keep-multiple-divs-inline-on-browser-resize/
+[ ] Animate color transitions
 [ ] Refactor image_average to separate CSV construction from image processing
-[ ] Automate running of image processing
-[ ] Automate image ingestion
 [ ] Accept submitted images
 [ ] Automate deployment
 
